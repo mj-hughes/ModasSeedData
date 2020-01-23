@@ -35,11 +35,11 @@ namespace ModasSeedData
             List<Event> Events = new List<Event>();
 
             // loop for each day in the range from 6 months ago to today
-            while (eventDate < localDate)
+            while (eventDate <= localDate)
             {
                 // a sorted list will be used to store daily events sorted by date/time - 
-                // each time an event is added, the list is re-sorted
-                
+                // Changed: each time an event is added, the list is re-sorted
+                // Now: times are sorted and events are added in time order instead of sorting list each time                
                 // Events=SortList(Events);
 
                 // random between 0 and 5 determines the number of events to occur on a given day
